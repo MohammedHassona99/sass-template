@@ -15,6 +15,29 @@
   position: relative;
 }
 
+.clearfix {
+  clear: both;
+}
+
+.main-button {
+  background-color: rgba(226, 73, 76, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main-button:hover {
+  background-color: #e2494c;
+}
+
 .head-with-border {
   position: relative;
 }
@@ -27,6 +50,7 @@
   border-radius: 15px;
   max-width: 400px;
   padding: 10px 15px;
+  text-transform: uppercase;
 }
 
 .head-with-border h2::before {
@@ -131,4 +155,233 @@ header .navbar li a:hover {
 }
 
 /* End Slider */
+/* Start Services */
+.services {
+  position: relative;
+}
+
+.services .service-box {
+  float: left;
+  width: 33.33333%;
+}
+
+.services .service-box:not(:last-of-type) {
+  padding-right: 20px;
+}
+
+.services .service-box h3 {
+  color: #666;
+}
+
+.services .service-box h3 i {
+  font-size: 30px;
+  position: relative;
+  top: 4px;
+  padding-right: 5px;
+}
+
+.services .service-box p {
+  color: #777;
+  line-height: 1.5;
+}
+
+.services .service-box a {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/* End Services */
+/* Start Services */
+.our-player {
+  position: relative;
+}
+
+.our-player .player-box {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+
+.our-player .player-box img {
+  max-width: 100%;
+}
+
+.our-player .player-box h3 {
+  color: #666;
+  font-weight: normal;
+}
+
+.our-player .player-box h3 span {
+  font-weight: bold;
+}
+
+.our-player .player-box p {
+  color: #777;
+  line-height: 1.5;
+}
+
+.our-player .player-box a {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/* End Services */
+/* Start Lorem */
+.lorem {
+  position: relative;
+}
+
+.lorem .lorem-box {
+  float: left;
+  width: calc(94% / 3);
+}
+
+.lorem .lorem-box:not(:last-of-type) {
+  margin-right: 3%;
+}
+
+.lorem .lorem-box img {
+  max-width: 100%;
+}
+
+/* End Lorem */
+footer {
+  overflow: hidden;
+  background-color: #e2e2e2;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+footer .gallery,
+footer .info,
+footer .contact-us {
+  float: left;
+}
+
+footer .gallery {
+  width: 50%;
+}
+
+footer .gallery .img-box {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+footer .gallery .img-box img {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+footer .gallery .img-box .text {
+  float: left;
+  margin: 0 15px;
+  width: calc(100% - 180px);
+}
+
+footer .gallery .img-box .text h4 {
+  color: #e2494c;
+}
+
+footer .gallery .img-box .text p {
+  color: #888;
+  line-height: 1.9;
+}
+
+footer .info {
+  width: 25%;
+}
+
+footer .info ul {
+  color: #888;
+  line-height: 1.8;
+}
+
+footer .info ul li span {
+  color: #e2494c;
+}
+
+footer .info h4 {
+  color: #888;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+footer .info p {
+  color: #888;
+  margin-top: 8px;
+}
+
+footer .contact-us {
+  width: 25%;
+}
+
+footer .contact-us input[type="text"],
+footer .contact-us input[type="email"],
+footer .contact-us textarea {
+  border: 1px solid #c9c9c9;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  -mox-border-radius: 10px;
+  border-radius: 10px;
+}
+
+footer .contact-us input[type="text"]::-webkit-input-placeholder,
+footer .contact-us input[type="email"]::-webkit-input-placeholder,
+footer .contact-us textarea::-webkit-input-placeholder {
+  font-size: 12px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+}
+
+footer .contact-us input[type="text"]:-ms-input-placeholder,
+footer .contact-us input[type="email"]:-ms-input-placeholder,
+footer .contact-us textarea:-ms-input-placeholder {
+  font-size: 12px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+}
+
+footer .contact-us input[type="text"]::-ms-input-placeholder,
+footer .contact-us input[type="email"]::-ms-input-placeholder,
+footer .contact-us textarea::-ms-input-placeholder {
+  font-size: 12px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+}
+
+footer .contact-us input[type="text"]::placeholder,
+footer .contact-us input[type="email"]::placeholder,
+footer .contact-us textarea::placeholder {
+  font-size: 12px;
+  padding-left: 5px;
+  letter-spacing: 1px;
+}
+
+footer .contact-us textarea {
+  height: 200px;
+}
+
+footer .section-title {
+  color: #444;
+  font-weight: normal;
+}
+
+footer .copyright {
+  overflow: hidden;
+  padding: 25px 0;
+  border-top: 1px solid #c5c5c5;
+  color: #888;
+}
+
+footer .copyright .text,
+footer .copyright .author {
+  float: left;
+  width: 50%;
+}
+
+footer .copyright .author {
+  text-align: right;
+}
 /*# sourceMappingURL=app.css.map */

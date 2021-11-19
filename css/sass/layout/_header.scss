@@ -9,14 +9,12 @@ header {
       margin-bottom: 0;
       margin-top: 10px;
     }
-    p {
-    }
   }
   .navbar {
     width: 70%;
     float: $float-left;
     background-color: $mainColor;
-    @include prefixer(border-radius, 15px, webkit moz o);
+    @include prefixing(border-radius, 15px, webkit moz o);
     li {
       width: 20%;
       float: $float-left;

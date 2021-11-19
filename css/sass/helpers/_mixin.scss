@@ -14,7 +14,7 @@
   height: 100%;
 }
 /* prefix mixin */
-@mixin prefixer($prop, $val, $prefixes: ()) {
+@mixin prefixing($prop, $val, $prefixes: ()) {
   @each $prefix in $prefixes {
     #{"-" + $prefix + "-" + $prop}: $val;
   }
