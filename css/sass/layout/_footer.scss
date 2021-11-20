@@ -9,19 +9,28 @@ footer {
     float: $float-left;
   }
   .gallery {
-    width: 50%;
+    @media #{$minSmall} {
+      width: 100%;
+    }
+    @media #{$minMedium} {
+      width: 50%;
+    }
     .img-box {
       overflow: hidden;
       margin-bottom: 15px;
       img {
-        float: $float-left;
+        @media #{$minSmall} {
+          float: $float-left;
+        }
         width: 150px;
         height: 150px;
       }
       .text {
-        float: $float-left;
-        margin: 0 15px;
-        width: calc(100% - 180px);
+        @media #{$minSmall} {
+          float: $float-left;
+          margin: 0 15px;
+          width: calc(100% - 180px);
+        }
         h4 {
           color: $mainColor;
         }
@@ -34,7 +43,12 @@ footer {
   }
 
   .info {
-    width: 25%;
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 25%;
+    }
     ul {
       color: #888;
       line-height: 1.8;
@@ -53,7 +67,12 @@ footer {
     }
   }
   .contact-us {
-    width: 25%;
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 25%;
+    }
 
     input[type="text"],
     input[type="email"],
@@ -82,13 +101,22 @@ footer {
     padding: 25px 0;
     border-top: 1px solid #c5c5c5;
     color: #888;
+    margin-top: 30px;
     .text,
     .author {
-      float: $float-left;
-      width: 50%;
-    }
-    .author {
-      text-align: $text-right;
+      @media #{$maxMobile} {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+      @media #{$minSmall} {
+        float: $float-left;
+        width: 50%;
+        .author {
+          text-align: $text-right;
+        }
+      }
     }
   }
 }

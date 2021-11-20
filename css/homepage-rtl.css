@@ -1,1 +1,98 @@
-/* No CSS *//*# sourceMappingURL=homepage-rtl.css.map */
+/* media query mixin */
+/* overlay mixin */
+/* prefix mixin */
+/* animation mixin */
+/* Start Header */
+@media (min-width: 992px) {
+  header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+
+header .logo .the-toggle {
+  right: auto;
+  left: 15px;
+}
+
+@media (min-width: 992px) {
+  header .navbar {
+    float: right;
+  }
+}
+
+header .navbar li {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  header .navbar li {
+    text-align: right;
+  }
+}
+
+/* End Header */
+/* Start Home */
+/* Start Services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+  }
+}
+
+/* End Services */
+/* Start Services */
+@media (min-width: 768px) {
+  .our-player .player-box {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-player .player-box {
+    text-align: right;
+  }
+}
+
+/* End Services */
+/* Start Lorem */
+@media (min-width: 768px) {
+  .lorem .lorem-box {
+    float: right;
+  }
+}
+
+/* End Lorem */
+/* End Home */
+/* Start Footer */
+footer .gallery,
+footer .info,
+footer .contact-us {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  footer .gallery .img-box img {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .gallery .img-box .text {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .copyright .text,
+  footer .copyright .author {
+    float: right;
+  }
+  footer .copyright .text .author,
+  footer .copyright .author .author {
+    text-align: left;
+  }
+}
+
+/* End Footer */
+/*# sourceMappingURL=homepage-rtl.css.map */
